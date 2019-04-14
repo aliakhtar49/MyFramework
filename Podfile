@@ -7,6 +7,8 @@ target 'MyFramework' do
 
 
   # Pods for MyFramework
- pod 'Alamofire', '5.0.0-beta.3'
+# pod 'Alamofire', '5.0.0-beta.3'
+ pod 'Alamofire'
+
 
 end

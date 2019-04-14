@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Ali Akhtar" => "aliakhtarcs11020@gmail.com" }
   #spec.source       = { :path => '.' }
   #spec.source       = { :git => "https://github.com/aliakhtar49/MyFramework.git", :tag => "1.0.5" }
-  spec.source       = { :git => "https://github.com/aliakhtar49/MyFramework.git", :commit => "f23f8ef784bf3afcae4a68e6a41539551df75daa" }
+  spec.source       = { :git => "https://github.com/aliakhtar49/MyFramework.git", :commit => "2c360b814bfb2c6aa233e72df892c71c84412b22" }
 
   
   spec.source_files  = "MyFramework"
