@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Alamofire
+//import Alamofire
 
 public protocol APIRequest {
     
@@ -44,14 +44,14 @@ public class APIRequestLoader<T: APIRequest> {
             completionHandler(nil,error)
         }
     }
-    public func getAlamofireResponse(_ url: String, completion: @escaping (String) -> Void) {
-        AF.request(url).responseString { (response) in
-            //
-            if let json = response.result.value {
-                completion(json) // serialized json response
-            }
-
-            //
-        }
-    }
+//    public func getAlamofireResponse(_ url: String, completion: @escaping (String) -> Void) {
+//        AF.request(url).responseString { (response) in
+//            //
+//            if let json = response.result.value {
+//                completion(json) // serialized json response
+//            }
+//
+//            //
+//        }
+//    }
 }
