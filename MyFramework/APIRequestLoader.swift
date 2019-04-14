@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Alamofire
+
 public protocol APIRequest {
     
     associatedtype RequestDataType
@@ -42,7 +44,14 @@ public class APIRequestLoader<T: APIRequest> {
             completionHandler(nil,error)
         }
     }
-    public func version_method_1_0_3() -> String{
-    return "1.0.3 method"
+    public func getAlamofireResponse(_ url: String, completion: @escaping (String) -> Void) {
+        AF.request(url).responseString { (response) in
+            //
+            if let json = response.result.value {
+                completion(json) // serialized json response
+            }
+
+            //
+        }
     }
 }
