@@ -19,12 +19,12 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author             = { "Ali Akhtar" => "aliakhtarcs11020@gmail.com" }
   #spec.source       = { :path => '.' }
-  spec.source       = { :git => "https://github.com/aliakhtar49/MyFramework.git", :tag => "1.0.4" }
+  spec.source       = { :git => "https://github.com/aliakhtar49/MyFramework.git", :tag => "1.0.5" }
 
   
   spec.source_files  = "MyFramework"
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = "4.2" 
-  spec.dependency = "Alamofire", "5.0.0-beta.3"
+  spec.dependency = 'Alamofire', '5.0.0-beta.3'
 end
 
